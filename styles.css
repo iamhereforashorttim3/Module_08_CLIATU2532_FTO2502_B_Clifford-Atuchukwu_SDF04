@@ -1,7 +1,140 @@
 body {
     background-color: #659f8f;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 footer {
     display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+.web-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    order: 1;
+    gap: 6vw;
+}
+
+.attributes {
+    display: flex;
+    justify-content: space-between;
+    gap: 6vh;
+}
+
+.list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+li {
+    list-style: none;
+    padding: 1vh;
+    margin: 1vh;
+    text-decoration-color: gray;
+}
+
+button {
+    border-radius: 6px;
+    background-color: #d86943;
+    transform: scale(1.25, 1.5);
+    margin-left: 6vh;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: auto;
+}
+
+input {
+    border-radius: 6px;
+    transform: scale(1.5, 2);
+    border: 2px solid white;
+    margin-right: 4vh;
+    height: auto;
+}
+
+.line-through {
+    width: 100%;
+    height: 2px;
+    background-color: #d86943;
+    margin-top: 150px;
+}
+
+img {
+    width: 20vh;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    order: 2;
+}
+
+@media (max-width: 1024px) {
+    .web-info {
+        flex-direction: column-reverse;
+        gap: 2vh;
+    }
+
+    .attributes {
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 3vh; 
+    }
+
+    .line-through {
+        margin-top: 10vh;
+    }
+
+    img {
+        width: 25vh;
+        margin-top: 5vh;
+    }
+}
+
+@media (max-width: 667px) {
+    
+    .web-info {
+        flex-direction: column-reverse;
+    }
+
+    .attributes {
+        margin-top: 3vh;
+    }
+
+    .line-through {
+        margin-top: 8vh;
+    }
+
+    img {
+        width: 25vh;
+        margin-top: 3vh;
+    }
+
+    .button {
+        flex-wrap: wrap;
+    
+    }
+
+    button {
+        margin-top: 4vh;
+    }
+
+    input {
+        margin-left: 4vh;
+    }
+    
 }
